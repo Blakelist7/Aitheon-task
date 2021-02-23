@@ -8,7 +8,6 @@ import * as path from 'path';
 import questions from './modules/questions/questions.routes';
 import('./config/db');
 
-
 const app = express();
 
 app.use(bodyParser.json());

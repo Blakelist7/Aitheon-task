@@ -1,0 +1,22 @@
+<div class="row mt-5">
+    <div class="fas fa-user-plus"> 
+    <h2>Register</h2>
+    </div>
+<form id="login" class="form-group" method="POST" action="/register">
+    <div>
+        <input type="text" class="form-control" placeholder="Name" name="name" value="<%= typeof name != 'undefined' ? name : '' %>" required>
+    </div>
+<div>
+    <input type="email" class="form-control" placeholder="Email" name="email" value="<%= typeof email != 'undefined' ? email : '' %>" required>
+</div>
+<div>
+    <input type="password" class="form-control" placeholder="Enter Password" name="password" value="<%= typeof password != 'undefined' ? password : '' %>" required>
+</div>
+    <input type="checkbox">
+    <button type="checkbox" class="form-control">I agree to terms and conditions</button>
+<div>
+    <button type="submit" class="btn btn-primary btn-block">Register</button> 
+</div>
+</form>
+<p class="lead mt-4">Have An Account?<a href="/login">Login</a></p>
+</div>  
